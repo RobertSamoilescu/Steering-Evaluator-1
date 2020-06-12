@@ -1,5 +1,10 @@
 # Steering-Evaluator-1
 
+<p align="center">
+  <img src="sample/simultaion1.png" alt="simulation1" width="512" />
+  <img src="sample/simulation2.png" alt="simulation2" width="512"/>
+  <img src="sample/simulation3.png" alt="simulation3" width="512"/>
+</p>
 
 
 ## Create dataset
@@ -45,3 +50,12 @@ mkdir ckpts
 |ResNet18   | Yes| 0.80  | 128    | 0.0048  | 0.0393   |3828.16 |
 
 Closed-loop evaluation using 2D perspective augmentations over $3060.16$[s]. The model receives as input an RGB frame, and the speed. Abbreviations: 2D perspective augmentation applied during training(AG), autonomy (A), number of interventions (NI), mean absolute distance (MAD), mean absolute angle (MAA), mean steps till intervention (MSTI), video length (VL), penalty(P).
+
+## Visualize intervention points
+```shell
+python3 view.py
+```
+
+<p align="center">
+  <img <img src="sample/interventions.png" alt="interventions" width="512" />
+</p>
