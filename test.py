@@ -35,6 +35,8 @@ parser.add_argument('--vis_dir', type=str, help='checkpoints dir', default='snap
 parser.add_argument('--load_model', type=str, help='name of the model', default='default')
 parser.add_argument('--use_speed', action='store_true')
 parser.add_argument('--use_augm', action='store_true')
+parser.add_argument('--split_path', type=str, help='path to the directory of train-test scene split')
+parser.add_argument('--data_path', type=str, help='path to the directory of raw dataset (.mov & .json)')
 args = parser.parse_args()
 
 # set seed
@@ -244,16 +246,13 @@ def test_video(path, time_penalty=6, translation_threshold=1.5, rotation_thresho
 
 
 if __name__ == "__main__":
-    # statistics for multiple videos
-    split_path = "/mnt/storage/workspace/roberts/disertatie/scenes_split/test_scenes.txt"
-    data_path = '/mnt/storage/workspace/roberts/upb/all_3fps'
-    
-    with open(split_path, 'rt') as fin:
+    with open(args.split_path, 'rt') as fin:
         files = fin.read()
 
     files = files.split("\n")
-    files = [os.path.join(data_path, file + ".json")  for file in files]
+    files = [os.path.join(args.data_path, file + ".json")  for file in files]
     files = files[args.begin:args.end]
+    
     # test video
     for file in tqdm(files):
         test_video(file, verbose=False)

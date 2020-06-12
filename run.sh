@@ -3,17 +3,15 @@ BEGIN=0
 END=81
 MODEL=resnet
 
-#nohup python3 test.py \
-#	--begin $BEGIN \
-#	--end $END \
-#	--model $MODEL \
-#	--use_speed \
-#	> "print_logs/"$MODEL"_SPEED.txt" 2>&1 &
+python3 test.py \
+	--begin $BEGIN \
+	--end $END \
+	--model $MODEL \
+	--use_speed 
 
-nohup python3 test.py \
+python3 test.py \
 	--begin $BEGIN \
 	--end $END \
 	--model $MODEL \
 	--use_speed \
-	--use_augm \
-	> "print_logs/"$MODEL"_SPEED_AUGM.txt" 2>&1 &
+	--use_augm 
