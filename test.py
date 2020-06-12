@@ -35,7 +35,7 @@ parser.add_argument('--vis_dir', type=str, help='checkpoints dir', default='snap
 parser.add_argument('--load_model', type=str, help='name of the model', default='default')
 parser.add_argument('--use_speed', action='store_true')
 parser.add_argument('--use_augm', action='store_true')
-parser.add_argument('--split_path', type=str, help='path to the directory of train-test scene split')
+parser.add_argument('--split_path', type=str, help='path to the file containing the test scenes (test_scenes.txt)')
 parser.add_argument('--data_path', type=str, help='path to the directory of raw dataset (.mov & .json)')
 args = parser.parse_args()
 
