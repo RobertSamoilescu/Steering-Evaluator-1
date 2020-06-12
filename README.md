@@ -1,15 +1,15 @@
 # Steering-Evaluator-1
 
 <p align="center">
-  <img src="sample/simultaion1.png" alt="simulation1" width="512" />
+  <img src="sample/simultaion1.gif" alt="simulation1" width="512" />
 </p>
 
 <p align="center">
-  <img src="sample/simulation2.png" alt="simulation2" width="512"/>
+  <img src="sample/simulation2.gif" alt="simulation2" width="512"/>
 </p>  
   
 <p align="center">
-  <img src="sample/simulation3.png" alt="simulation3" width="512"/>
+  <img src="sample/simulation3.gif" alt="simulation3" width="512"/>
 </p>
 
 
