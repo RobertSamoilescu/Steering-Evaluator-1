@@ -1,6 +1,10 @@
 # Steering-Evaluator-1
 
 <p align="center">
+  <img src="sample/simulator.png" alt="pipeline" />
+</p>
+
+<p align="center">
   <img src="sample/sample1.gif" alt="simulation1" />
 </p>
 
