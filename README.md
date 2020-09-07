@@ -49,8 +49,8 @@ mkdir ckpts
 ./run.sh
 ```
 
+<!--
 ## Results
-
 |Model      | AG | A     | NI     | MAD/MSTI| MAA/MSTI | VL+P   |
 |-----------|----|-------|--------|---------|----------|--------|
 |Baseline   | *  | 0.45  | 620    | 0.0277  | 0.2390   |6780.16 |     
@@ -58,8 +58,8 @@ mkdir ckpts
 |ResNet18   | No | 0.67  | 248    | 0.0130  | 0.0731   |4548.16 |
 |Simple     | Yes| 0.76  | 165    | 0.0060  | 0.0485   |4050.16 |
 |ResNet18   | Yes| 0.80  | 128    | 0.0048  | 0.0393   |3828.16 |
-
 Closed-loop evaluation using 2D perspective augmentations over $3060.16$[s]. The model receives as input an RGB frame, and the speed. Abbreviations: 2D perspective augmentation applied during training(AG), autonomy (A), number of interventions (NI), mean absolute distance (MAD), mean absolute angle (MAA), mean steps till intervention (MSTI), video length (VL), penalty(P).
+-->
 
 ## Visualize intervention points
 ```shell
