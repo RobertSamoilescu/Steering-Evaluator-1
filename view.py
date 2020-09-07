@@ -18,6 +18,7 @@ args = parser.parse_args()
 if __name__ == "__main__":
     # get experiments
     exprs = os.listdir(args.log_dir)
+    # exprs = ["resnet_speed_balance"]
 
     for expr in exprs:
         # get list of videos
